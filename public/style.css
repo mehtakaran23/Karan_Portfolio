@@ -621,3 +621,101 @@ span{
 .case-links a:hover {
     text-decoration: underline;
 }
+
+/* ===============================
+   HARD MOBILE RESET (FIXES ALL)
+   =============================== */
+
+@media (max-width: 768px) {
+
+    /* GLOBAL SAFETY */
+    * {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* ===== NAVBAR FIX ===== */
+    nav {
+        height: auto;                 /* REMOVE 80px */
+        flex-direction: column;       /* STACK */
+        padding: 12px 0;
+        gap: 10px;
+    }
+
+    nav .left {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    nav .right ul {
+        flex-direction: column;       /* STACK LINKS */
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav .right ul li {
+        margin: 6px 0;                /* VERTICAL SPACING */
+    }
+
+    nav .right ul li a {
+        font-size: 1rem;
+    }
+
+    /* ===== HERO SECTION ===== */
+    .firstsection {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        min-height: auto;
+    }
+
+    .firstsection > div {
+        width: 100%;
+    }
+
+    .leftsection {
+        font-size: 1.6rem;
+        line-height: 1.4;
+    }
+
+    .rightsection img {
+        max-width: 240px;
+        margin-top: 25px;
+    }
+
+    /* ===== ALL SECTIONS ===== */
+    .secondsection,
+    .skills-section,
+    .build-section,
+    .projects-section,
+    .contact-section,
+    .case-study-section {
+        padding: 0 20px;
+        margin: 60px auto;
+    }
+
+    /* ===== TABLE FIX ===== */
+    .experience-table-wrapper {
+        overflow-x: auto;
+        margin-bottom: 40px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    /* ===== FOOTER FIX ===== */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+
