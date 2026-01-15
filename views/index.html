@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan - Developer Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Karan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi, My name is <span class="purple">Karan</span>
+                <div>and I am a Passionate</div>
+                <span id="element"></span>
+
+                <p class="tagline">
+                    I build clean, structured, and scalable web applications.
+                </p>
+
+
+                <div class="resume-actions">
+                    <a href="/240280107076_cv.pdf" class="resume-btn" target="_blank">
+                        View Resume
+                    </a>
+                    <a href="/240280107076_cv.pdf" class="resume-btn outline" download>
+                        Download CV
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="rightsection">
+
+                <img src="/cover3.png" alt="">
+            </div>
+            <!-- Scroll Teaser -->
+            <div class="scroll-teaser">
+                <span class="teaser-text">What I have done so far</span>
+                <span class="teaser-line"></span>
+            </div>
+        </section>
+
+        <!--second section-->
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>My Journey</h1>
+
+            <div class="experience-table-wrapper">
+                <table class="experience-table timeline-table">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>TechStack</th>
+                            <th>What I Did</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="year">2025 – Present</td>
+                            <td class="role">Web Development</td>
+                            <td>
+                                Built responsive web apps, worked with Express routing,
+                                APIs, and full-stack project structure.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="year">2024 – Present</td>
+                            <td class="role">Learning DSA</td>
+                            <td>
+                                Learning DSA in C++ by boosting my logical thinking
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="year">2023 – 2024</td>
+                            <td class="role">Video Editor</td>
+                            <td>
+                                Edited videos with smooth transitions, audio sync,
+                                and storytelling flow.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <span class="text-gray">What I work with</span>
+            <h1>Skills</h1>
+
+            <div class="skills-grid">
+
+                <div class="skill-group">
+                    <h3>Languages</h3>
+                    <p>JavaScript</p>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS</p>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Backend</h3>
+                    <p>Node.js, Express</p>
+                </div>
+
+                <div class="skill-group">
+                    <h3>APIs & Data</h3>
+                    <p>REST APIs, Fetch API</p>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Tools</h3>
+                    <p>Git, GitHub, Postman</p>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Concepts</h3>
+                    <p>Routing, MVC Basics, Deployment</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="build-section">
+            <span class="text-gray">My approach</span>
+            <h1>How I Build</h1>
+
+            <div class="build-steps">
+                <div class="build-step">Understand the problem and constraints</div>
+                <div class="build-step">Design clean structure before writing code</div>
+                <div class="build-step">Build features incrementally</div>
+                <div class="build-step">Refactor for clarity and scalability</div>
+                <div class="build-step">Deploy and iterate based on feedback</div>
+            </div>
+        </section>
+
+
+        <footer class="site-footer">
+            <div class="footer-content">
+                <span class="footer-left">© 2026 Karan</span>
+
+                <div class="footer-right">
+                    <a href="https://github.com/mehtakaran23" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/karan-mehta23" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'DSA Enthusiast', 'Web Designer', 'Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+
+
+
+</body>
+
+</html>

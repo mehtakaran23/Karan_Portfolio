@@ -1,0 +1,623 @@
+body{
+    background-color: rgb(0, 0, 33);
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18,18,62);
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: rgb(233, 230, 250);
+    
+}
+main hr{
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 40px 84px;
+}
+.left{
+    font-size: 1.5rem;
+}
+
+.firstsection{
+    min-height: 60vh;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px 0;
+    padding-bottom: 60px;
+}
+/* Scroll teaser */
+.scroll-teaser {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    opacity: 0.7;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+
+.teaser-text {
+    font-size: 0.85rem;
+    color: #9c97f1;
+    letter-spacing: 0.05em;
+    
+}
+
+.teaser-line {
+    display: block;
+    width: 1px;
+    height: 30px;
+    background: #9c97f1;
+    margin: 8px auto 0;
+    animation: teaserMove 1.8s ease-in-out infinite;
+}
+.firstsection > div{
+    width: 40%;
+}
+.leftsection{
+    font-size: 3rem;
+}
+
+.tagline {
+    margin-top: 15px;
+    font-size: 0.95rem;
+    color: #ccc;
+    max-width: 420px;
+    line-height: 1.6;
+}
+
+
+.resume-actions {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.resume-btn {
+    padding: 10px 18px;
+    background: #9c97f1;
+    color: #000021;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.resume-btn.outline {
+    background: transparent;
+    color: #9c97f1;
+    border: 1px solid #9c97f1;
+}
+
+
+.rightsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightsection img {
+    width: 100%;
+    max-width: 380px;       /* keeps person small & professional */
+    height: auto;
+    object-fit: contain;
+    
+    filter: drop-shadow(0 0 25px rgba(156, 151, 241, 0.25));
+    opacity: 0.95;
+}
+span{
+    font-weight: 700;
+}
+.purple{
+    color: rgb(189, 43, 226);
+}
+.text-gray{
+    color: grey;
+}
+ .secondsection {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 80vw; /* ensures space before footer */
+    margin: 80px auto;
+    padding: 0 84px;
+}
+
+.secondsection h1{
+    font-size: 1.9rem;
+}
+
+.secondsection .box{
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+.secondsection .vertical{
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 100px;
+}
+
+.experience-table-wrapper {
+    overflow-x: auto;
+}
+
+.experience-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.experience-table th,
+.experience-table td {
+    border: 1px solid #9c97f1;
+    padding: 15px;
+    text-align: left;
+}
+
+.experience-table th {
+    color: #9c97f1;
+    font-weight: 600;
+}
+
+.experience-table td {
+    color: #ddd;
+}
+
+.timeline-table {
+    border-collapse: separate;
+    border-spacing: 0 18px; /* space between rows */
+}
+
+.timeline-table thead th {
+    border: none;
+    color: #9c97f1;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.timeline-table tbody tr {
+    background: rgba(255, 255, 255, 0.02);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.timeline-table tbody tr:hover {
+    transform: translateX(6px);
+    background: rgba(156, 151, 241, 0.08);
+}
+
+.timeline-table td {
+    border: none;
+    padding: 16px 18px;
+    vertical-align: top;
+}
+
+.timeline-table .year {
+    color: #9c97f1;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.timeline-table .role {
+    font-weight: 600;
+    color: #fff;
+}
+
+.skills-section {
+    max-width: 80vw;
+    margin: 80px auto;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.skill-group {
+    border-left: 3px solid #9c97f1;
+    padding: 15px 18px;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.skill-group h3 {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #9c97f1;
+}
+
+.skill-group p {
+    margin-top: 6px;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.build-section {
+    max-width: 80vw;
+    margin: 80px auto;
+}
+
+.build-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.build-step {
+    padding: 14px 18px;
+    border-left: 3px solid #9c97f1;
+    background: rgba(255, 255, 255, 0.02);
+    color: #ccc;
+    font-size: 0.95rem;
+}
+
+
+.site-footer {
+    margin-top: 100px;
+    padding: 25px 0;
+    border-top: 1px solid rgba(156, 151, 241, 0.2);
+}
+
+.footer-content {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #aaa;
+    font-size: 0.85rem;
+}
+
+.footer-right {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-right a {
+    text-decoration: none;
+    color: #9c97f1;
+    font-weight: 500;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+/* here starts the css for about html page */
+.aboutsection {
+    max-width: 80vw;
+    margin: 80px auto;
+}
+
+.about-container {
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.about-text {
+    flex: 2;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #ddd;
+}
+
+.about-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.trait {
+    display: flex;
+    gap: 16px;
+    padding: 16px 18px;
+    border-left: 3px solid #9c97f1;
+    background: rgba(255, 255, 255, 0.02);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.trait:hover {
+    transform: translateX(6px);
+    background: rgba(156, 151, 241, 0.08);
+}
+
+.trait-icon {
+    font-size: 1.6rem;
+}
+
+.trait h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #9c97f1;
+}
+
+.trait p {
+    margin: 4px 0 0;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* here starts the css section for projects.html file*/
+.projects-section {
+    max-width: 80vw;
+    margin: 80px auto;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.project-card {
+    border: 1px solid #9c97f1;
+    padding: 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.02);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #9c97f1;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.project-tech {
+    margin: 12px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-tech span {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border: 1px solid #9c97f1;
+    border-radius: 4px;
+    color: #9c97f1;
+}
+
+.project-links {
+    margin-top: 12px;
+}
+
+.project-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #9c97f1;
+    font-weight: 500;
+}
+
+
+/* here starts the css for contacts section */
+.contact-section {
+    max-width: 80vw;
+    margin: 100px auto;
+}
+
+.contact-container {
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.contact-info {
+    flex: 1;
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.contact-details {
+    margin-top: 20px;
+}
+
+.contact-details div {
+    margin-bottom: 10px;
+}
+
+.contact-details strong {
+    color: #9c97f1;
+}
+
+.contact-intro {
+    color: #ddd;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-bottom: 25px;
+}
+
+.contact-card {
+    border-left: 3px solid #9c97f1;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.contact-label {
+    display: block;
+    font-size: 0.75rem;
+    color: #9c97f1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.contact-value {
+    display: block;
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-top: 4px;
+}
+
+.contact-cta span {
+    color: #aaa;
+    margin-right: 8px;
+}
+
+.contact-cta a {
+    color: #9c97f1;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-cta a:hover {
+    text-decoration: underline;
+}
+
+.contact-resume-link {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.contact-resume-link a {
+    color: #9c97f1;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 6px;
+}
+
+.contact-resume-link a:hover {
+    text-decoration: underline;
+}
+
+
+
+/*  here starts the css for services.html file*/
+.services-section {
+    max-width: 80vw;
+    margin: 80px auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.service-card {
+    border: 1px solid #9c97f1;
+    padding: 22px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.02);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+}
+
+.service-card h3 {
+    color: #9c97f1;
+    margin-top: 0;
+}
+
+.service-card p {
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* css file for case study for k-chat app*/
+.case-study-section {
+    max-width: 70vw;
+    margin: 80px auto;
+}
+
+.case-intro {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.7;
+}
+
+.case-block {
+    margin-top: 40px;
+}
+
+.case-block h3 {
+    color: #9c97f1;
+    margin-bottom: 10px;
+}
+
+.case-block p,
+.case-block ul {
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.case-block ul {
+    padding-left: 20px;
+}
+
+.case-links {
+    margin-top: 40px;
+}
+
+.case-links a {
+    margin-right: 20px;
+    color: #9c97f1;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.case-links a:hover {
+    text-decoration: underline;
+}
