@@ -640,30 +640,34 @@ span{
 
     /* ===== NAVBAR FIX ===== */
     nav {
-        height: auto;                 /* REMOVE 80px */
-        flex-direction: column;       /* STACK */
-        padding: 12px 0;
-        gap: 10px;
+        height: auto;
+        flex-direction: row;          /* BACK TO HORIZONTAL */
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 14px;
     }
 
     nav .left {
-        font-size: 1.2rem;
-        text-align: center;
+        font-size: 1rem;
+        white-space: nowrap;          /* prevent breaking */
     }
 
     nav .right ul {
-        flex-direction: column;       /* STACK LINKS */
-        align-items: center;
+        display: flex;
+        flex-direction: row;          /* KEEP HORIZONTAL */
+        flex-wrap: wrap;              /* allow wrapping */
+        justify-content: flex-end;
+        gap: 10px;
         padding: 0;
         margin: 0;
     }
 
     nav .right ul li {
-        margin: 6px 0;                /* VERTICAL SPACING */
+        margin: 0;
     }
 
     nav .right ul li a {
-        font-size: 1rem;
+        font-size: 0.85rem;           /* slightly smaller */
     }
 
     /* ===== HERO SECTION ===== */
