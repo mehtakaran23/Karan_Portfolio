@@ -727,3 +727,67 @@ span{
 }
 
 
+/* =========================
+   ABOUT PAGE – MOBILE FIX
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* Prevent horizontal overflow */
+    body {
+        overflow-x: hidden;
+    }
+
+    .aboutsection {
+        padding: 0 20px;
+    }
+
+    /* Stack text + highlights vertically */
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-text {
+        width: 100%;
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    /* Highlights container */
+    .about-highlights {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Individual trait cards */
+    .trait {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        padding: 16px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.03);
+    }
+
+    .trait-icon {
+        font-size: 1.6rem;
+        line-height: 1;
+        flex-shrink: 0;
+    }
+
+    .trait h3 {
+        font-size: 1rem;
+        margin-bottom: 4px;
+    }
+
+    .trait p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+}
+
+
+
